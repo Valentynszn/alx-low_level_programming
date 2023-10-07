@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Display single-digit numbers in base 10, starting from 0,
- *        and ending with a newline character.
+ * main - Prints single-digit numbers in base 10, starting from 0.
  *
  * Return: Always 0.
  */
@@ -10,13 +9,11 @@
 int main(void)
 
 {
-	char letter;
+	int digit;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-
+	for (digit = 0; digit <= 9; digit++)
 	{
-	if (letter != 'e' && letter != 'q')
-	putchar(letter);
+		putchar(digit + '0');
 	}
 
 	putchar('\n');

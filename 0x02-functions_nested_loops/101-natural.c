@@ -6,8 +6,8 @@
  * Return: Always return 0.
  */
 
-int main(void)
 
+int main(void)
 {
 	print_times_table(3);
 	_putchar('\n');

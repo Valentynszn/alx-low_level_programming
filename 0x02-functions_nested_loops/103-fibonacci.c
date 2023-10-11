@@ -1,14 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Entry point for a program to calculate the sum
- * of even Fibonacci numbers less than 4,000,000.
- *
- * Description: This program calculates the sum of even
- * Fibonacci numbers up to 4,000,000 and prints the result.
- *
- * Return: Always 0 (success).
- */
+  * main - the main printing funtion
+  * less than 4000000.
+  * Return: Always 0.
+  */
+
 
 int main(void)
 {
@@ -24,6 +21,6 @@ int main(void)
 		j = k - j;
 		++i;
 	}
-	printf("%ld\n", sum);
+	printf("%ld", sum);
 	return (0);
 }

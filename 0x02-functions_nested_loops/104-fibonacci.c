@@ -1,15 +1,19 @@
 #include <stdio.h>
 
+
 /**
- * main - Entry point for Fibonacci program.
+ * main - Entry point to print a Fibonacci sequence starting with 1 and 2,
+ * separated by commas.
  *
- * Description: This program calculates and prints the first 98
- * Fibonacci numbers, separated by commas, starting with 1 and 2.
+ * Description: This program calculates and prints a Fibonacci sequence
+ * starting with 1 and 2. Each term is separated by a comma.
  *
- * Return: Always 0 (success).
+ * Return: Always 0 (Success).
  */
 
+
 int main(void)
+
 
 {
 	int count;

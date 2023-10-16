@@ -1,33 +1,17 @@
 #include "main.h"
 
 /**
- * _strcat - Connects the source string onto the destination string.
+ * reset_to_98 - Updates an integer through a pointer to 98.
+ * @n: A pointer to an integer to be updated.
  *
- * @src: The string to be connected.
- * @dest: The destination string.
+ * Description: This function takes a pointer to an integer
+ * as a parameter and sets the value it points to 98.
  *
- * Return: A pointer to the destination string.
+ * Return: Return is n
  */
 
+void reset_to_98(int *n)
 
-char *_strcat(char *dest, char *src)
 {
-int k, r;
-
-k = 0;
-r = 0;
-
-while (dest[k] != '\0')
-{
-	k++;
-}
-
-while (src[r] != '\0')
-{
-	dest[k] = src[r];
-	k++;
-	r++;
-}
-dest[k] = '\0';
-return (dest);
+	*n = 98;
 }

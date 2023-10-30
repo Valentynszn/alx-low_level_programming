@@ -3,50 +3,44 @@
 
 /**
  * str_concat - Concatenates two strings.
- * @str1: The base string to concatenate.
- * @str2: The string to append to str1.
+ * @s1: The base string to concatenate.
+ * @s2: The string to append to s1.
  *
  * Return: If concatenation fails - NULL.
  *	Otherwise - a pointer to a newly-allocated memory space
- *			containing the concatenated strings.
+ *		containing the concatenated strings.
  */
 
-char *str_concat(char *str1, char *str2)
+char *str_concat(char *s1, char *s2)
 
 {
-	char *concatenated;
-	int i, j = 0, length = 0;
+	char *concat_str;
+	int index, concat_index = 0, len = 0;
 
-	if (str1 == NULL)
+	if (s1 == NULL)
 	{
-		str1 = "";
+		s1 = "";
 	}
-	if (str2 == NULL)
+	if (s2 == NULL)
 	{
-		str2 = "";
+		s2 = "";
 	}
-
-	while (str1[length] || str2[length])
+	for (index = 0; s1[index] || s2[index]; index++)
 	{
-		length++;
+		len++;
 	}
-
-	concatenated = malloc(sizeof(char) * (length + 1));
-
-	if (concatenated == NULL)
+	concat_str = malloc(sizeof(char) * len);
+	if (concat_str == NULL)
 	{
 		return (NULL);
 	}
-
-	for (i = 0; str1[i]; i++)
+	for (index = 0; s1[index]; index++)
 	{
-		concatenated[j++] = str1[i];
+		concat_str[concat_index++] = s1[index];
 	}
-	for (i = 0; str2[i]; i++)
+	for (index = 0; s2[index]; index++)
 	{
-		concatenated[j++] = str2[i];
+		concat_str[concat_index++] = s2[index];
 	}
-
-	concatenated[length] = '\0';
-	return (concatenated);
+	return (concat_str);
 }

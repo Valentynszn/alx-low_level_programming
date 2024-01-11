@@ -6,7 +6,8 @@
  * @h: pointer to the head of dlistint_t list.
  * @idx: position to input the new node.
  * @n: integer for the new node to contain.
- *
+ * Description: This function inserts a new node with the provided value 'n'
+ * at the specified position 'idx' in the given doubly linked list.
  * Return: If the function fails - NULL.
  *         Otherwise - the address of the new node.
  */

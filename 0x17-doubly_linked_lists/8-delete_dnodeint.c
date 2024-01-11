@@ -5,7 +5,8 @@
  * specified index from a dlistint_t.
  * @head: Pointer to the head of the dlistint_t.
  * @index: Index of the node to be removed.
- *
+ * Description: This function removes the node at the specified
+ * index 'index' from the given doubly linked list.
  * Return: Returns 1 upon success, and -1 otherwise.
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)

@@ -10,23 +10,16 @@
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	/* Declare new node pointers. */
 	dlistint_t *new, *last;
 
-	/* Allocate memory for the new node. */
 	new = malloc(sizeof(dlistint_t));
 
-	/* Check if memory allocation failed. */
 	if (new == NULL)
-		/* Return NULL if allocation failed. */
 		return (NULL);
 
-	/* Set the value of the new node to the provided integer. */
 	new->n = n;
-	/* Set the next pointer of the new node to NULL. */
 	new->next = NULL;
 
-	/* Check if the list is empty. */
 	if (*head == NULL)
 	{
 		/* Set the previous pointer of the new node to NULL. */
